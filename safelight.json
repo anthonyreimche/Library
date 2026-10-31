@@ -1,0 +1,21 @@
+{
+  "id": "safelight.library",
+  "name": "Library",
+  "version": "1.0.0",
+  "description": "Browse, sort and cull the project's photos in a grid or list.",
+  "author": "Anthony Reimche",
+  "main": "dist/index.js",
+  "license": "GPL-3.0-only",
+  "categories": [
+    "library"
+  ],
+  "keywords": [
+    "library",
+    "grid",
+    "culling",
+    "rating",
+    "sort"
+  ],
+  "repository": "anthonyreimche/Library",
+  "minAppVersion": "3.2.0"
+}
