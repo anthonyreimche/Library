@@ -7,7 +7,7 @@ The **Library** module: where you browse, sort and cull a project's photos.
 - **Selecting:** click, Ctrl/⌘-click and Shift-click; click the empty space
   to clear. Double-click a photo to open it in Develop. Drag photos onto a
   folder in the Folders panel to move them.
-- **Culling:** ratings, flags, color labels, rotate, remove and the other
+- **Culling:** ratings, flags, colour labels, rotate, remove and the other
   Library shortcuts (Preferences ▸ Shortcuts), and the photo right-click
   menu.
 - **Toolbar:** import progress with Stop, rotate, Export Data (sidecars that
@@ -34,6 +34,6 @@ Safelight hands the extension its own React through `api.react`, so the
 bundle never includes React. `src/safelight.d.ts` mirrors the part of the
 app's extension API the extension uses.
 
-## License
+## Licence
 
 GPL-3.0-only with an attribution term (GPL v3 §7b), the same licence as Safelight; see LICENSE. Copyright (C) 2026 Anthony Reimche.
