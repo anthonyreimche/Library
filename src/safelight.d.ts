@@ -26,7 +26,7 @@ export interface StoreApi<T> {
   subscribe(listener: (state: T, prev: T) => void): () => void;
 }
 
-/** A catalog photo. The Library hands it to core's cells whole and reads only
+/** A catalogue photo. The Library hands it to core's cells whole and reads only
  *  its id. */
 export interface CatalogPhoto {
   id: string;
@@ -237,7 +237,7 @@ export interface SafelightAPI {
     /** The photos the grid shows, in display order, every filter and sort
      *  applied. React hook. */
     useVisiblePhotos(): CatalogPhoto[];
-    /** The photo right-click menu and its dialogs. React hook. */
+    /** The photo right-click menu and its dialogues. React hook. */
     usePhotoActions(): PhotoActions;
     /** Mounts the Library's culling shortcuts while the caller is mounted. */
     useCullingShortcuts(): void;

@@ -25,7 +25,7 @@ export function LibraryStatusBar() {
   const count = api.stores.useCatalogStore((s) => s.photos.length);
   return (
     <span>
-      {count} photo{count !== 1 && "s"} in catalog
+      {count} photo{count !== 1 && "s"} in catalogue
     </span>
   );
 }

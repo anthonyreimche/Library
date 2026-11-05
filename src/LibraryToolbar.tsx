@@ -68,8 +68,8 @@ export function LibraryToolbar() {
     if (ids.length === 0) return;
     if (useSettings.getState().confirmRemovePhotos) {
       const ok = await api.ui.confirmDialog({
-        title: "Remove from catalog",
-        message: `Remove ${ids.length} photo${ids.length === 1 ? "" : "s"} from the catalog? The original file${ids.length === 1 ? "" : "s"} on disk won't be deleted, and won't be re-imported on the next folder scan.`,
+        title: "Remove from catalogue",
+        message: `Remove ${ids.length} photo${ids.length === 1 ? "" : "s"} from the catalogue? The original file${ids.length === 1 ? "" : "s"} on disk won't be deleted, and won't be re-imported on the next folder scan.`,
         confirmLabel: "Remove",
       });
       if (!ok) return;

@@ -65,12 +65,12 @@ describe("LibraryView", () => {
     expect(subbar.compareDocumentPosition(grid) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
   });
 
-  it("counts the catalog in the status bar", () => {
+  it("counts the catalogue in the status bar", () => {
     const r = rig({ photos: [photo("a")] });
     render(<LibraryStatusBar />);
-    expect(screen.getByText("1 photo in catalog")).toBeTruthy();
+    expect(screen.getByText("1 photo in catalogue")).toBeTruthy();
     act(() => r.catalog.setState({ photos: PHOTOS }));
-    expect(screen.getByText("4 photos in catalog")).toBeTruthy();
+    expect(screen.getByText("4 photos in catalogue")).toBeTruthy();
   });
 });
 
@@ -107,9 +107,9 @@ describe("LibraryToolbar", () => {
     await flush();
     expect(r.confirms).toEqual([
       {
-        title: "Remove from catalog",
+        title: "Remove from catalogue",
         message:
-          "Remove 2 photos from the catalog? The original files on disk won't be deleted, and won't be re-imported on the next folder scan.",
+          "Remove 2 photos from the catalogue? The original files on disk won't be deleted, and won't be re-imported on the next folder scan.",
         confirmLabel: "Remove",
       },
     ]);
@@ -121,7 +121,7 @@ describe("LibraryToolbar", () => {
     render(<LibraryToolbar />);
     fireEvent.click(screen.getByRole("button", { name: "Remove" }));
     await flush();
-    expect(r.confirms[0].message).toContain("Remove 1 photo from the catalog? The original file on disk");
+    expect(r.confirms[0].message).toContain("Remove 1 photo from the catalogue? The original file on disk");
     expect(r.calls).toEqual([]);
   });
 
@@ -221,7 +221,7 @@ describe("LibraryToolbar", () => {
 });
 
 describe("LibraryGrid", () => {
-  it("draws a thumbnail per visible photo at the grid size, with the photo actions' dialogs", () => {
+  it("draws a thumbnail per visible photo at the grid size, with the photo actions' dialogues", () => {
     rig({ visible: [PHOTOS[1], PHOTOS[3]] });
     render(<LibraryGrid />);
     const cells = [...document.querySelectorAll<HTMLElement>("[data-photo-id]")];
@@ -306,7 +306,7 @@ describe("LibraryGrid", () => {
     expect(r.calls).toEqual([["contextMenu", "d"]]);
   });
 
-  it("says how to start when the catalog is empty", () => {
+  it("says how to start when the catalogue is empty", () => {
     rig({ photos: [] });
     render(<LibraryGrid />);
     expect(screen.getByText("No photos imported")).toBeTruthy();

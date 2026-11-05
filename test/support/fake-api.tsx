@@ -1,9 +1,9 @@
-// A stand-in Safelight API over real React and zustand. The catalog store
+// A stand-in Safelight API over real React and zustand. The catalogue store
 // selects the way core's does (a range runs from the last clicked photo along
 // the order given), and records every action called. Core's components are
 // small stand-ins with core's accessible names: each cell is a `data-photo-id`
 // element wired to the handlers it was given, the grid renders every item, a
-// slot renders a marker naming itself. Dialogs, the sidecar export and the
+// slot renders a marker naming itself. Dialogues, the sidecar export and the
 // culling shortcuts record their calls.
 
 import * as React from "react";
@@ -158,7 +158,7 @@ export function fakeApi({
   exported = 1,
 }: {
   photos?: CatalogPhoto[];
-  /** The grid's photos, when they differ from the catalog's (a filter). */
+  /** The grid's photos, when they differ from the catalogue's (a filter). */
   visible?: CatalogPhoto[];
   selectedIds?: string[];
   activePhotoId?: string | null;

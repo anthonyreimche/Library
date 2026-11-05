@@ -45,7 +45,7 @@ export function LibraryGrid() {
 
   const visible = api.catalog.useVisiblePhotos();
 
-  // The right-click menu and its dialogs, shared with every other photo surface.
+  // The right-click menu and its dialogues, shared with every other photo surface.
   const { onContextMenu: handleContextMenu, overlays } = api.catalog.usePhotoActions();
 
   const activeIndex = React.useMemo(

@@ -1,7 +1,7 @@
 {
   "name": "safelight-library",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library module for Safelight: the photo grid and list, its toolbar and culling shortcuts.",
   "type": "module",
   "scripts": {

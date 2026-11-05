@@ -51,8 +51,8 @@ function o() {
 	let { useUIStore: n, useCatalogStore: a, useProjectStore: o, useSettings: s } = t.stores, { Slider: c } = t.components, { Select: l } = t.ui, u = n((e) => e.viewMode), d = n((e) => e.setViewMode), f = n((e) => e.gridSize), p = n((e) => e.setGridSize), m = n((e) => e.sortField), h = n((e) => e.sortDirection), g = n((e) => e.setSort), _ = a((e) => e.removePhotos), v = a((e) => e.rotatePhotos), y = a((e) => e.photos), b = a((e) => e.selectedIds), x = o((e) => e.stopImport), S = o((e) => e.importDone), C = o((e) => e.importTotal), w = C > 0 && S < C, T = w ? Math.round(S / C * 100) : 0, E = t.registry.use((e) => e.librarySorts), D = e.useMemo(() => Object.values(E), [E]), O = async () => {
 		let e = [...b];
 		e.length !== 0 && (!s.getState().confirmRemovePhotos || await t.ui.confirmDialog({
-			title: "Remove from catalog",
-			message: `Remove ${e.length} photo${e.length === 1 ? "" : "s"} from the catalog? The original file${e.length === 1 ? "" : "s"} on disk won't be deleted, and won't be re-imported on the next folder scan.`,
+			title: "Remove from catalogue",
+			message: `Remove ${e.length} photo${e.length === 1 ? "" : "s"} from the catalogue? The original file${e.length === 1 ? "" : "s"} on disk won't be deleted, and won't be re-imported on the next folder scan.`,
 			confirmLabel: "Remove"
 		})) && _(e);
 	}, k = async () => {
@@ -221,7 +221,7 @@ function f() {
 }
 function p() {
 	let n = t.stores.useCatalogStore((e) => e.photos.length);
-	return /* @__PURE__ */ e.createElement("span", null, n, " photo", n !== 1 && "s", " in catalog");
+	return /* @__PURE__ */ e.createElement("span", null, n, " photo", n !== 1 && "s", " in catalogue");
 }
 //#endregion
 //#region src/index.tsx
