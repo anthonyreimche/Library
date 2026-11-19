@@ -9,6 +9,7 @@ import type { UiTokens } from "./safelight";
 const SORT_OPTIONS: { value: string; label: string }[] = [
   { value: "dateImported", label: "Imported" },
   { value: "dateCreated", label: "Captured" },
+  { value: "dateEdited", label: "Edited" },
   { value: "filename", label: "Name" },
   { value: "rating", label: "Rating" },
 ];

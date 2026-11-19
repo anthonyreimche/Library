@@ -3,7 +3,9 @@
 The **Library** module: where you browse, sort and cull a project's photos.
 
 - **Grid and list:** thumbnails or rows, with the size slider and the sort
-  menu (imported, captured, name, rating, plus any sort an extension adds).
+  menu (imported, captured, edited, name, rating, plus any sort an extension
+  adds). Edited puts the photo you changed last first, with photos never
+  edited after them.
 - **Selecting:** click, Ctrl/⌘-click and Shift-click; click the empty space
   to clear. Double-click a photo to open it in Develop. Drag photos onto a
   folder in the Folders panel to move them.
